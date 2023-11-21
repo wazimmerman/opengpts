@@ -49,7 +49,7 @@ def construct_chat_history(messages):
 def get_xml_agent(tools, system_message, bedrock=False):
     if bedrock:
         client = boto3.client(
-            service_name="bedrock-runtime",
+            "bedrock-runtime",
             region_name="us-west-2",
             aws_access_key_id=os.environ.get("AWS_ACCESS_KEY_ID"),
             aws_secret_access_key=os.environ.get("AWS_SECRET_ACCESS_KEY"),
