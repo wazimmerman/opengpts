@@ -47,12 +47,12 @@ def _get_arxiv():
     return ArxivQueryRun(api_wrapper=ArxivAPIWrapper(), args_schema=ArxivInput)
 
 
-def _get_you_search():
-    return create_retriever_tool(
-        YouRetriever(n_hits=3, n_snippets_per_hit=3),
-        "you_search",
-        "Searches for documents using You.com",
-    )
+#def _get_you_search():
+#    return create_retriever_tool(
+#        YouRetriever(n_hits=3, n_snippets_per_hit=3),
+#        "you_search",
+#        "Searches for documents using You.com",
+#    )
 
 
 def _get_sec_filings():
